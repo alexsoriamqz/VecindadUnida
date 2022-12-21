@@ -58,6 +58,21 @@
   opacity: 0;
 }
 
+.info {
+  color: white;
+  text-align: center;
+  text-size-adjust: 100px;
+  position: fixed;
+  top: 1000px;
+  height: 100%;
+  width: 100%;
+}
+
+p{
+  color: white;
+  text-align: center;
+}
+
 
 
 #modal-avatar {

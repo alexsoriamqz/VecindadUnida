@@ -21,6 +21,8 @@ if ( navigator.serviceWorker ) {
 
 var titulo      = $('#titulo');
 var nuevoBtn    = $('#nuevo-btn');
+var notifiBtn   = $('#notificacion-btn');
+var infoBtn     = $('#info-btn');
 var salirBtn    = $('#salir-btn');
 var cancelarBtn = $('#cancel-btn');
 var postBtn     = $('#post-btn');
@@ -172,6 +174,29 @@ nuevoBtn.on('click', function() {
         opacity: 1
     }, 200 );
 
+});
+
+// Boton de informacion
+infoBtn.on('click', function() {
+
+    document.location.href='../info.html';
+
+});
+
+//Boton de Notificacion
+notifiBtn.on('click', function() {
+
+   Push.Permission.request();
+   Push.create('Hola Alex', {
+   body: 'Soy tu notificacion',
+   icon: "img/avatars/chavo.png",
+   timeout: 1500000,
+   vibrate: [100,100,100],
+   onclick: function(){
+    window.location="https://google.es";
+    console.log(this);
+   }
+   })
 });
 
 // Boton de cancelar mensaje

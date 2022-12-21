@@ -47,97 +47,28 @@
 <body>
         <!-- Titulo -->
         <span class="first"> 
-            <span id="salir-btn" class="fa fa-sign-out-alt out oculto animated fadeIn"></span>
+            <span id="salir-btn" class="fa fa-sign-out"></span>
             <span id="titulo">
-                <i class="fa fa-user"></i>
+                <i id="salir-btn" class="fa fa-user"></i>
                 A quien le quieres hablar?
             </span>
             <span id="nuevo-btn" class="fa fa-pen-square new oculto animated fadeIn fast"></span &nbsp>
             <span id="notificacion-btn" class="fa fa-bell"></span &nbsp>
-            <span id="info-btn" class="fa fa-info"></span &nbsp>
         </span>
         <!-- Fin Titulo -->
-
+<br><br><br><br><br><br>
         <!-- Modal -->
-        <div id="modal" class="oculto">
-            <img id="modal-avatar" src="img/avatars/gohan.jpg">
-
-            <span class="first"> 
-                <span id="titulo-modal">Nuevo mensaje</span>
-                <span id="cancel-btn" class="fa fa-times"></span>
-            </span>
+        <div>
+            <p>
+                Este es la pagina informativa de esta aplicacion web, se trata de un sitio de interaccion inspirada en uno de los shows de television mas importantes en Mexico, llamado el chavo del ocho. Personajes imortales como el chavo, Don Ramon, Quico, Doña Florinda conversan entre ellos simulando como hubiera sido el show en esta epoca donde la tecnologia domina el mundo y mas las aplicaciones web. 
+            </p>
+            <p>
+                <img src="img/vecindad.jpg">
+            </p>
             
-
-            <div class="nuevo-mensaje">
-                <textarea id="txtMensaje" placeholder="Nuevo mensaje..." rows="5"></textarea>
-                
-                <!-- CAMARA - 1: Agregar contenedor -->
-                <div class="camara-contenedor fadeIn fast oculto" align="center">
-                    
-                    <video id="player" autoplay style="height: 300px;"></video>
-
-                    <button id="tomar-foto-btn">
-                        <i class="fa fa-camera"></i>
-                        Tomar Foto
-                    </button>
-                </div>
-                <!-- FIN CAMARA - 1 -->
-
-               
-            </div>
-
-            
-            <!-- boton de enviar -->
-
-            <div id="post-btn" class="fab">
-                <i class="fa fa-paper-plane"></i>
-            </div>
-
-            <div id="location-btn" class="fab-marker">
-                <i class="fa fa-map-marker-alt"></i>
-            </div>
-
-            <div id="photo-btn" class="fab-photo">
-                <i class="fa fa-camera"></i>
-            </div>
 
         </div>
         <!-- Fin Modal -->
-
-
-        <!-- Seleccion de personaje -->
-        <div id="seleccion" class="seleccion animated fadeIn fast" align="center">
-        
-            <div>
-                <img data-user="chavo" src="img/avatars/chavo.png" alt="chavo" class="seleccion-avatar">
-            </div>
-
-            <div>
-                <img data-user="donRamon" src="img/avatars/donRamon.png" alt="donRamon" class="seleccion-avatar">
-            </div>
-
-            <div>
-                <img data-user="donBarriga" src="img/avatars/donBarriga.png" alt="donBarriga" class="seleccion-avatar">
-            </div>
-
-            <div>
-                <img data-user="doñaFlorinda" src="img/avatars/doñaFlorinda.png" alt="doñaFlorinda" class="seleccion-avatar">
-            </div>
-
-            <div>
-                <img data-user="kiko" src="img/avatars/kiko.png" alt="kiko" class="seleccion-avatar">
-            </div>
-
-        </div>
-
-        <!-- FIN Seleccion de personaje -->
-
-        <!-- Lista de mensajes -->
-        <ul id="timeline" class="timeline oculto">
-            
-
-        </ul>
-        <!-- Fin Lista de mensajes -->
 
 
       
